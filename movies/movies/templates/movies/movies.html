@@ -1,1 +1,14 @@
-{{movies}}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movies</title>
+    </head>
+    <body>
+        <h1>Movies</h1>
+        <ul>
+            {% for movie in movies %}
+            <li>{{movie.title}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
